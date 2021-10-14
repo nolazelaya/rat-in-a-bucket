@@ -1,0 +1,74 @@
+<html>
+
+<head>
+
+  <title>our next show</title>
+
+<link REL=STYLESHEET type= "text/css" href= "style.css" media=screen>
+
+<style type="text/css">
+
+ BODY		{margin-top: 20;
+		margin-left:20;
+		margin-right:20}
+  -->
+</style>
+  
+</head>
+<body>
+
+				<!-- begin new_window script -->
+
+
+
+<script language="JavaScript1.2">
+<!--
+
+
+//1)Enter domains to be EXCLUDED from opening in new window:
+var excludedomains=["ratinabucket.com","file://"]
+
+//2)Automatically open offsite links in new window? (1=yes, 0 will render a checkbox for manual selection)
+var auto=1
+
+var excludedomains=excludedomains.join("|")
+rexcludedomains=new RegExp(excludedomains, "i")
+
+if (!auto)
+document.write('<form name="targetmain"><input type="checkbox" name="targetnew" checked onClick="dynamiclink()">Open off-site links in new window</form>')
+
+function dynamiclink(){
+
+if (auto||(!auto&&document.targetmain.targetnew.checked)){
+for (i=0; i<=(document.links.length-1); i++) {
+if (document.links[i].hostname.search(rexcludedomains)==-1&&document.links[i].href.indexOf("http:")!=-1)
+document.links[i].target="_blank"
+}
+}
+else
+for (i=0; i<=(document.links.length-1); i++) {
+if (document.links[i].hostname.indexOf(mydomain)==-1)
+document.links[i].target=""
+}
+}
+
+if (auto)
+window.onload=dynamiclink
+
+// -->
+</script>
+
+
+				<!-- end new_window script -->
+
+
+
+
+		<P style="background-color:#C7B8A2">&nbsp &nbsp &nbsp &nbsp<b>next show</B></P><br><br>
+
+<B>saturday, august 27:</B> w/ <U>spickle</U> and <U>da capa preta</U> (members of <U>cancer patient</U> and <U>face first</U>) @ dixie tavern. &nbsp; 10 p.m., $5.
+<BR><BR>
+
+<center><I><a href="javascript:window.close();">-close window-</a></I></center>
+
+</body></html>

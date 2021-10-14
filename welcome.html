@@ -1,0 +1,88 @@
+<html>
+
+<head>
+
+
+
+  <title></title>
+
+<link REL=STYLESHEET type= "text/css" href= "style.css" media=screen>
+
+
+</head>
+
+
+
+<body>
+
+				<!-- begin new_window script -->
+<script language="JavaScript1.2">
+<!--
+
+
+//1)Enter domains to be EXCLUDED from opening in new window:
+var excludedomains=["ratinabucket.com","file://"]
+
+//2)Automatically open offsite links in new window? (1=yes, 0 will render a checkbox for manual selection)
+var auto=1
+
+var excludedomains=excludedomains.join("|")
+rexcludedomains=new RegExp(excludedomains, "i")
+
+if (!auto)
+document.write('<form name="targetmain"><input type="checkbox" name="targetnew" checked onClick="dynamiclink()">Open off-site links in new window</form>')
+
+function dynamiclink(){
+
+if (auto||(!auto&&document.targetmain.targetnew.checked)){
+for (i=0; i<=(document.links.length-1); i++) {
+if (document.links[i].hostname.search(rexcludedomains)==-1&&document.links[i].href.indexOf("http:")!=-1)
+document.links[i].target="_blank"
+}
+}
+else
+for (i=0; i<=(document.links.length-1); i++) {
+if (document.links[i].hostname.indexOf(mydomain)==-1)
+document.links[i].target=""
+}
+}
+
+if (auto)
+window.onload=dynamiclink
+
+// -->
+</script>
+
+
+				<!-- end new_window script -->
+
+<script language="javascript">
+function openWin3() {var n=open('merch.html','merchandise','width=300,height=200, top=15, left=15, toolbar=no,status=no,menubar=no,scrollbars=yes,resizable=no,');
+}
+</script>
+
+			<!-- begin welcome text -->
+
+<DIV style="line-height: 1.8">
+
+<I><B>11/8/2005</b></I><BR>
+
+It takes a hurricane to destroy a band. &nbsp; That is exactly what it takes. &nbsp; I'm no longer going to presume to speak for the band's behalf. &nbsp; I'll just say that we had to end the band because of Katrina. &nbsp; Keith, Shaun, and Troy are alive and well. &nbsp; Keith has taken over and been communicating through our myspace.com page. &nbsp; Instead of making any drastic changes, I've decided to leave the website as it was before the storm - except for this message. &nbsp; I'm leaving it up to the rest of the guys to leave whatever legacy they may choose to leave in cyberspace. Everything else I have to say can be found <A href="chaw.html" target="_blank"> here</A>. &nbsp; It's been fun, folks.<BR><BR>
+
+- Ramon<BR><BR>
+
+Rat in a Bucket: 2000-2005
+
+
+<BR><BR><BR><BR><BR>past updates:<BR><BR>
+
+
+<A HREF="news.html#7/26/2005"><I>7/26/2005</I>: Monroe show cancelled</a><BR>
+<A HREF="news.html#7/2/2005"><I>7/2/2005</I>: dave benefit show</a><BR>
+<A HREF="news.html#6/12/2005"><I>6/12/2005</I>: earbleed update</a><BR>
+<A HREF="news.html#4/27/2005"><I>4/27/2005</I>: earbleed festival</a><BR>
+<A HREF="news.html#4/17/2005"><I>4/17/2005</I>: 2 shows posted</a><BR>
+<A HREF="news.html#4/13/2005"><I>4/13/2005</I>: info on auto-response letter when e-mailing band@ratinabucket.com</a>
+
+</BODY>
+</HTML>

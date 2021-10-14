@@ -1,0 +1,202 @@
+<html>
+<head>
+
+  <title>shaun</title>
+
+<link REL=STYLESHEET type= "text/css" href= "style.css" media=screen>
+
+  <style type="text/css">
+  
+<!--
+
+#dek 			{POSITION:absolute;VISIBILITY:hidden;Z-INDEX:200;}
+
+BODY			{background:#A79882}
+	  -->
+</style>
+  
+<script>
+<!--
+
+
+var content=new Array()
+//change the array below to the text associated with your links Expand or contract the array, depending on how many links you have
+
+content[0]=''
+
+content[1]='<B>back to front page</B>'
+
+function regenerate(){
+window.location.reload()
+}
+function regenerate2(){
+if (document.layers){
+appear()
+setTimeout("window.onresize=regenerate",450)
+}
+}
+
+function changetext(whichcontent){
+
+if (document.all||document.getElementById){
+cross_el=document.getElementById? document.getElementById("descriptions"):document.all.descriptions
+cross_el.innerHTML='<font face="Verdana"><small>'+whichcontent+'<font></small>'
+}
+else if (document.layers){
+document.d1.document.d2.document.write('<font face="Verdana"><small>'+whichcontent+'</small></font>')
+document.d1.document.d2.document.close()
+}
+
+}
+
+function appear(){
+document.d1.visibility='show'
+}
+
+window.onload=regenerate2
+
+
+//-->
+</script>
+
+</head>
+<body>
+
+				<!-- begin new_window script -->
+<script language="JavaScript1.2">
+<!--
+
+
+//1)Enter domains to be EXCLUDED from opening in new window:
+var excludedomains=["ratinabucket.com","file://"]
+
+//2)Automatically open offsite links in new window? (1=yes, 0 will render a checkbox for manual selection)
+var auto=1
+
+var excludedomains=excludedomains.join("|")
+rexcludedomains=new RegExp(excludedomains, "i")
+
+if (!auto)
+document.write('<form name="targetmain"><input type="checkbox" name="targetnew" checked onClick="dynamiclink()">Open off-site links in new window</form>')
+
+function dynamiclink(){
+
+if (auto||(!auto&&document.targetmain.targetnew.checked)){
+for (i=0; i<=(document.links.length-1); i++) {
+if (document.links[i].hostname.search(rexcludedomains)==-1&&document.links[i].href.indexOf("http:")!=-1)
+document.links[i].target="_blank"
+}
+}
+else
+for (i=0; i<=(document.links.length-1); i++) {
+if (document.links[i].hostname.indexOf(mydomain)==-1)
+document.links[i].target=""
+}
+}
+
+if (auto)
+window.onload=dynamiclink
+
+// -->
+</script>
+
+
+				<!-- end new_window script -->
+
+<CENTER>
+<TABLE WIDTH=100% CELLPADDING="5" CELLSPACING="" BORDER=0 STYLE="font-family: 'Gill Sans', Arial, sans-serif; line-height: 1.55; font-size: 10px">
+<TR>
+
+<TD BGCOLOR="#B7A892" width=20%>shaun : screamer<BR><BR>
+
+no content for this member has been submitted. &nbsp; to request content, please send e-mail to <A HREF="mailto:discord19@cox.net">discord19@cox.net</A>
+
+
+<PRE>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+<TD BGCOLOR="#A79882" width=40% valign=top>link(s):<BR><BR>
+
+<div id="scriptmenu" style="line-height:20px; margin-left:20px"><p>
+
+<A HREF="front.html" onMouseover="changetext(content[1])" onMouseout="changetext(content[0])">go back</a><br>
+
+<BR><BR>
+
+				<!-- begin text navigation -->
+<P style="font-size: 10;color:#000000">
+<A HREF="front.html">home</A> &#124;
+<A HREF="sights.html"> sights</A> &#124; 
+<A HREF="http://www.audiostreet.net/artist.aspx?artistid=3585"> sounds</A> &#124; 
+<A HREF="shows.html#comingup"> shows</A>  &#124; 
+<A HREF="mailto:band@ratinabucket.com"> e-mail</A>
+
+</P>
+				<!-- end text navigation -->
+
+</font></strong></p>
+</div>
+
+
+
+
+
+
+<TD BGCOLOR="#A9A9C1" width=40% align=center valign=top STYLE="background: #A79882 url(images/shaunback.jpg)  top center; background-repeat: no-repeat">email: badgeese@aol.com<BR><BR>
+
+
+<PRE>
+
+
+
+
+
+
+
+</PRE>
+
+<ilayer id="d1" width="200" height="200" visibility="hide">
+<layer id="d2" width="200" height="200">
+<div id="descriptions" align="left">
+
+</div>
+</layer>
+</ilayer>
+
+
+</TABLE>
+</center>
+
+
+</body>
+</html>
