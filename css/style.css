@@ -1,16 +1,182 @@
+/* ----------------------------- BASE STYLES ----------------------------- */
+
 body {
-	background:#A79882;
-	color: #000000;
-	font-family: 'Gill Sans', Arial, sans-serif;
-	font-size: 12px;
+  padding: 0;
+	margin: 0;
+  background-color: #fff;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 
-a:link, a:visited {
-	text-decoration: underline;
-	color: #555555;
+.wrapper {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+  width: 100%;
 }
- 
+
+img {
+	max-width: 100%;
+  max-height: 100%;
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 a:hover {
 	color: #111111;
 	text-decoration: none;
 }
+
+h1 {
+  font-size: 1.5em;
+}
+
+ li {
+  list-style-type: none;
+}
+
+/* ----------------------------- HEADER STYLES ----------------------------- */
+
+header {
+	display: flex;
+	flex-flow: column wrap;
+  align-items: center;
+  width:100%;
+}
+
+nav {
+  /* background-color: #eee; */
+  margin:0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+nav h3 {
+  margin:0;
+  padding: 3% 6% 6% 6%;
+}
+
+/* ----------------------------- MEMBERS STYLES ----------------------------- */
+
+.members {
+  background-color: rgba(0, 10, 50, .7);
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-around;
+	color: #eee;
+	height: 4%;
+	width: 95%;
+  padding: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* ----------------------------- NEWS STYLES ----------------------------- */
+
+#news {
+  width: 95%;
+  margin: 2%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#news div {
+  background-color: #444;
+  color: #eee;
+  padding: 1% 4%;
+  border-top: 2% solid #eee;
+  border-bottom: 3px solid #eee;
+}
+
+#news a:link,a:visited {
+  color: #aaa
+}
+
+#news h2 {
+  text-align: center;
+}
+
+#news h3 {
+  font-size: .75em;
+}
+
+/* ----------------------------- SOUNDS STYLES ----------------------------- */
+
+#sounds {
+  width: 95%;
+}
+
+#sounds div {
+  background-color: rgba(0, 10, 50, .7);
+  color: #eee;
+  padding: 5%;
+}
+#sounds h2 {
+ text-align: center;
+}
+
+#sounds a:link {
+  color: #fff;
+}
+
+
+
+/* ----------------------------- MERCH STYLES ----------------------------- */
+
+#merch {
+  width: 95%;
+}
+
+#merch div {
+  background-color: #444;
+  color: #eee;
+  padding: 1% 4%;
+  border-top: 2% solid #eee;
+  border-bottom: 3px solid #eee;
+}
+
+#merch h2 {
+  text-align: center;
+}
+
+#merch a:link {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* ----------------------------- BREAKPOINTS ----------------------------- */
+
+@media (min-width: 600px) and (max-width: 899px)  {
+	body {
+		font-size: 1em;
+	}
+	h1 {
+		font-size: 1.25em;
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1199px)  {
+	body {
+		font-size: 1.25em;
+	}
+	h1 {
+		font-size: 1.75em;
+	}
+}
+
+@media (min-width: 1200px)  {
+	body {
+		font-size: 1.5em;
+	}
+	h1 {
+		font-size: 2em;
+	}
+} 
