@@ -69,13 +69,19 @@ nav h3 {
 .members {
   background-color: rgba(0, 10, 50, .7);
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: space-around;
 	color: #eee;
 	height: 4%;
 	width: 95%;
-  padding: 0;
+  /* padding: 0; */
+
+}
+
+.members div {
+  width: 100%;
+  text-align: center;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
@@ -111,6 +117,13 @@ nav h3 {
 
 /* ----------------------------- SIGHTS STYLES ----------------------------- */
 
+.sights {
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  background-color: #717171;
+}
+
 .sights h1 {
   margin: 0;
   text-align: center;
@@ -121,9 +134,10 @@ nav h3 {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 650px;
   position: relative;
   margin: auto;
+  margin-bottom: 25%;
 }
 
 /* Hide the images by default */
@@ -205,22 +219,31 @@ nav h3 {
 
 #sounds {
   width: 95%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  flex-basis: 100%;
 }
 
 #sounds div {
+  width: 100%;
   background-color: rgba(0, 10, 50, .7);
   color: #eee;
   padding: 5%;
 }
-#sounds h2 {
+/* #sounds h2 {
  text-align: center;
-}
+} */
 
 #sounds a:link {
   color: #fff;
 }
 
-
+#sounds ul {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
 
 /* ----------------------------- MERCH STYLES ----------------------------- */
 
@@ -293,6 +316,12 @@ nav h3 {
   .merch-new-cd {
     justify-content: space-around;
   }
+  .sights h1 {
+    margin: 5%;
+  }
+  .slideshow-container {
+    margin-bottom: 5%;
+  }
 }
 
 @media (min-width: 900px) and (max-width: 1199px)  {
@@ -305,6 +334,44 @@ nav h3 {
 	h1 {
 		font-size: 1.75em;
 	}
+  .members {
+    flex-flow: row nowrap;
+    color: #eee;
+  }
+  .members div {
+    width: 25%;
+    height: 10em;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75em;
+  }
+  #news {
+    width: 95%;
+    margin: 2% 2% 0 2%;
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+    #news div {
+    flex-basis: 33%;
+    background-color: #444;
+    color: #eee;
+    padding: 1% 1%;
+    border-left: 2% solid #eee;
+    margin-right: 3px solid #eee;
+    flex-grow: 2;
+  }
+  .sights h1 {
+    margin: 5%;
+  }
+  .slideshow-container {
+    margin-bottom: 5%;
+  }
 }
 
 @media (min-width: 1200px)  {
@@ -319,5 +386,42 @@ nav h3 {
 	}
   h3 {
     font-size: 3em;
+  }
+  .members {
+    flex-flow: row nowrap;
+    color: #eee;
+  }
+  .members div {
+    width: 25%;
+    height: 10em;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+  #news {
+    width: 95%;
+    margin: 2% 2% 0 2%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #news div {
+    flex-basis: 33%;
+    background-color: #444;
+    color: #eee;
+    padding: 1% 1%;
+    border-left: 2% solid #eee;
+    border-right: 3px solid #eee;
+    flex-grow: 2;
+  }
+  .sights h1 {
+    margin: 5%;
+  }
+  .slideshow-container {
+    margin-bottom: 5%;
   }
 }
