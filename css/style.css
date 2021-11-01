@@ -124,7 +124,7 @@ nav h3 {
   background-color: #717171;
 }
 
-.sights h1 {
+.sights h2 {
   margin: 0;
   text-align: center;
   margin: 10%;
@@ -255,10 +255,11 @@ nav h3 {
   background-color: #444;
   color: #eee;
   padding: 1% 4%;
-  border-top: 2% solid #eee;
   border-bottom: 3px solid #eee;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .merch-new-cd {
@@ -287,6 +288,7 @@ nav h3 {
   list-style-type: decimal-leading-zero ;
 }
 
+
 /* ----------------------------- FOOTER STYLES ----------------------------- */
 
 .footer h1 {
@@ -303,7 +305,7 @@ nav h3 {
 
 /* ----------------------------- BREAKPOINTS ----------------------------- */
 
-@media (min-width: 600px) and (max-width: 899px)  {
+@media (min-width: 573px) and (max-width: 899px)  {
 	body {
 		font-size: 1em;
 	}
@@ -316,11 +318,17 @@ nav h3 {
   .merch-new-cd {
     justify-content: space-around;
   }
-  .sights h1 {
+  .sights h2 {
     margin: 5%;
   }
   .slideshow-container {
     margin-bottom: 5%;
+  }
+  .merch-old-cd {
+    flex-basis: 50%;
+  }
+  .merch-new-cd {
+    flex-basis: 50%;
   }
 }
 
@@ -366,15 +374,22 @@ nav h3 {
     margin-right: 3px solid #eee;
     flex-grow: 2;
   }
-  .sights h1 {
+  .sights h2 {
     margin: 5%;
   }
   .slideshow-container {
     margin-bottom: 5%;
   }
+  .merch-old-cd {
+    flex-basis: 50%;
+  }
+  .merch-new-cd {
+    flex-basis: 50%;
+    background-color: #333333;
+  }
 }
 
-@media (min-width: 1200px)  {
+@media (min-width: 1200px) and (max-width: 1799px)  {
 	body {
 		font-size: 1em;
 	}
@@ -418,10 +433,79 @@ nav h3 {
     border-right: 3px solid #eee;
     flex-grow: 2;
   }
-  .sights h1 {
+  .sights h2 {
     margin: 5%;
   }
   .slideshow-container {
     margin-bottom: 5%;
+  }
+  .merch-old-cd {
+    flex-basis: 50%;
+  }
+  .merch-new-cd {
+    flex-basis: 100%;
+    background-color: #333333;
+  }
+}
+
+@media (min-width: 1800px)  {
+  body {
+		font-size: 1em;
+	}
+  nav {
+    width: 100%;
+  }
+	h1 {
+		font-size: 3em;
+	}
+  h3 {
+    font-size: 3em;
+  }
+  .members {
+    flex-flow: row nowrap;
+    color: #eee;
+  }
+  .members div {
+    width: 25%;
+    height: 10em;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+  #news {
+    width: 95%;
+    margin: 2% 2% 0 2%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #news div {
+    flex-basis: 33%;
+    background-color: #444;
+    color: #eee;
+    padding: 1% 1%;
+    border-left: 2% solid #eee;
+    border-right: 3px solid #eee;
+    flex-grow: 2;
+  }
+  .sights h2 {
+    margin: 5%;
+  }
+  .slideshow-container {
+    margin-bottom: 5%;
+  }
+  .merch-old-cd {
+    flex-basis: 50%;
+  }
+  .merch-new-cd {
+    flex-basis: 100%;
+    background-color: #333333;
+  }
+	#merch img {
+    margin-right: 4%;
   }
 }
